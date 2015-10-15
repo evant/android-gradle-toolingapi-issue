@@ -1,0 +1,22 @@
+group 'me.tatarka'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile gradleTestKit()
+    testCompile 'junit:junit:4.12'
+}
