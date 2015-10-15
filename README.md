@@ -32,3 +32,8 @@ Caused by: java.io.StreamCorruptedException: invalid stream header: 636C6173
 ```
 
 It seems to fail as soon as the test status is reported back to gradle.
+
+
+Note: this issue does not occur if you change `apply plugin:  'com.android.application'` to `apply plugin: 'com.android.library'`.
+
+Tested from android gradle plugin `1.0.0` - `1.4.0-beta6`.
